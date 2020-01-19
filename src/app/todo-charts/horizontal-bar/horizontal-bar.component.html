@@ -1,10 +1,10 @@
 <div class="container-fluid">
   <div class="row">
     <div style="width: 33%;"></div>
-    <div style="width: 33%;"><h3>Todo Compare Bar chart</h3></div>
+    <div style="width: 33%;"><h3>Todo Compare Horizontal Bar chart</h3></div>
     <div style="width: 33%;text-align: end;">
-      <button type="button" class="btn btn-primary" (click)="toBarChart()">
-        next to barchart
+      <button type="button" class="btn btn-primary" (click)="toPipeChart()">
+        next to Pipe Chart bar chart
       </button>
     </div>
   </div>
@@ -13,37 +13,34 @@
       <div style="display: block;">
         <canvas
           baseChart
-          width="400"
-          height="200"
-          [datasets]="lineChartData"
-          [labels]="lineChartLabels"
-          [options]="lineChartOptions"
-          [colors]="lineChartColors"
-          [legend]="lineChartLegend"
-          [chartType]="lineChartType"
-          [plugins]="lineChartPlugins"
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
         >
         </canvas>
       </div>
     </div>
     <div class="col">
-      <ngx-charts-area-chart-stacked
+      <ngx-charts-bar-horizontal
         [view]="view"
         [scheme]="colorScheme"
-        [legend]="legend"
+        [results]="single"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
         [showXAxisLabel]="showXAxisLabel"
         [showYAxisLabel]="showYAxisLabel"
-        [xAxis]="xAxis"
-        [yAxis]="yAxis"
         [xAxisLabel]="xAxisLabel"
         [yAxisLabel]="yAxisLabel"
-        [timeline]="timeline"
-        [results]="multi"
         (select)="onSelect($event)"
         (activate)="onActivate($event)"
         (deactivate)="onDeactivate($event)"
       >
-      </ngx-charts-area-chart-stacked>
+      </ngx-charts-bar-horizontal>
     </div>
   </div>
 </div>

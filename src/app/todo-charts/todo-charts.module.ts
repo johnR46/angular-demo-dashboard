@@ -8,8 +8,9 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { PipeChartsComponent } from './pipe-charts/pipe-charts.component';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { LineChartComponent } from './line-chart/line-chart.component';
+import { HorizontalBarComponent } from './horizontal-bar/horizontal-bar.component';
 @NgModule({
-  declarations: [BarChartComponent, PipeChartsComponent, LineChartComponent],
+  declarations: [BarChartComponent, PipeChartsComponent, LineChartComponent, HorizontalBarComponent],
   imports: [
     CommonModule,
     TodoChartsRoutingModule,

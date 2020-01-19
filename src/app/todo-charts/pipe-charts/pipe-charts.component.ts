@@ -19,12 +19,8 @@ export class PipeChartsComponent implements OnInit {
   public pieChartOptions: ChartOptions = {
     responsive: true
   };
-  public pieChartLabels: Label[] = [
-    ['Download', 'Sales'],
-    ['In', 'Store', 'Sales'],
-    'Mail Sales'
-  ];
-  public pieChartData: SingleDataSet = [300, 500, 100];
+  public pieChartLabels: Label[] = ['Germany', 'USA', 'France', 'UK'];
+  public pieChartData: SingleDataSet = [8940000, 5000000, 7200000, 6200000];
   public pieChartType: ChartType = 'pie';
   public pieChartLegend = true;
   public pieChartPlugins = [];
@@ -41,7 +37,7 @@ export class PipeChartsComponent implements OnInit {
   legendPosition: string = 'below';
 
   colorScheme = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    domain: ['#e83e8c', '#007bff', '#ffc107', '#AAAAAA']
   };
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
@@ -51,7 +47,7 @@ export class PipeChartsComponent implements OnInit {
   }
 
   toLineChart(): void {
-    this.router.navigate(['./line'], { relativeTo: this.activatedRoute });
+    this.router.navigate(['/line'], { relativeTo: this.activatedRoute });
   }
 
   ngOnInit() {}

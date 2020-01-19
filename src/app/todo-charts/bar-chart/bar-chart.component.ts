@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartDataSets, ChartType } from 'chart.js';
 import { Label } from 'ng2-charts';
-import { multi } from './data';
+import { single, multi } from './data';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   templateUrl: './bar-chart.component.html',
   styleUrls: ['./bar-chart.component.css']
 })
-export class BarChartComponent implements OnInit {
+export class BarChartComponent {
   // ng2chart
   public barChartOptions: ChartOptions = {
     responsive: true
@@ -38,28 +38,35 @@ export class BarChartComponent implements OnInit {
   // options
   showXAxis: boolean = true;
   showYAxis: boolean = true;
-  gradient: boolean = false;
+  gradient: boolean = true;
   showLegend: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Country';
+  xAxisLabel: string = '';
   showYAxisLabel: boolean = true;
-  yAxisLabel: string = 'Population';
-  animations: boolean = true;
+  yAxisLabel: string = '';
+  legendTitle: string = 'Years';
 
   colorScheme = {
-    domain: ['#5AA454', '#C7B42C', '#AAAAAA']
+    domain: ['#e83e8c', '#007bff', '#0000']
   };
+
+  onSelect(data): void {
+    console.log('Item clicked', JSON.parse(JSON.stringify(data)));
+  }
+
+  onActivate(data): void {
+    console.log('Activate', JSON.parse(JSON.stringify(data)));
+  }
+
+  onDeactivate(data): void {
+    console.log('Deactivate', JSON.parse(JSON.stringify(data)));
+  }
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
     Object.assign(this, { multi });
   }
-  ngOnInit(): void {}
 
-  toPipeChart(): void {
-    this.router.navigate(['./pipe'], { relativeTo: this.activatedRoute });
-  }
-
-  onSelect(event) {
-    console.log(event);
+  toHorizontalBar(): void {
+    this.router.navigate(['/horiaontal'], { relativeTo: this.activatedRoute });
   }
 }

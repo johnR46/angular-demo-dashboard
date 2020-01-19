@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { PipeChartsComponent } from './pipe-charts/pipe-charts.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
+import { HorizontalBarComponent } from './horizontal-bar/horizontal-bar.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'line',
     component: LineChartComponent
+  },
+  {
+    path: 'horiaontal',
+    component: HorizontalBarComponent
   },
   {
     path: '**',

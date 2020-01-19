@@ -3,10 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'todo-demo-chart',
+    path: '',
     loadChildren: () =>
       import('./todo-charts/todo-charts.module').then(m => m.TodoChartsModule)
-  }
+  },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

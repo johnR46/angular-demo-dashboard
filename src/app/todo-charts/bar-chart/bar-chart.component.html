@@ -1,10 +1,10 @@
 <div class="container-fluid">
   <div class="row">
     <div style="width: 33%;"></div>
-    <div style="width: 33%;"><h3>Todo Compare Bar chart</h3></div>
+    <div style="width: 33%;"><h3>Todo Compare Vertical Bar chart</h3></div>
     <div style="width: 33%;text-align: end;">
-      <button type="button" class="btn btn-primary" (click)="toPipeChart()" >
-        next to pipe chart
+      <button type="button" class="btn btn-primary" (click)="toHorizontalBar()">
+        next to Horizontal bar chart
       </button>
     </div>
   </div>
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="col">
-      <ngx-charts-bar-vertical-stacked
+      <ngx-charts-bar-vertical-2d
         [view]="view"
         [scheme]="colorScheme"
         [results]="multi"
@@ -36,10 +36,12 @@
         [showYAxisLabel]="showYAxisLabel"
         [xAxisLabel]="xAxisLabel"
         [yAxisLabel]="yAxisLabel"
-        [animations]="animations"
+        [legendTitle]="legendTitle"
         (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)"
       >
-      </ngx-charts-bar-vertical-stacked>
+      </ngx-charts-bar-vertical-2d>
     </div>
   </div>
 </div>
