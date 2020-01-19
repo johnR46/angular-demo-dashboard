@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartDataSets, ChartType } from 'chart.js';
 import { Label } from 'ng2-charts';
-import { single, multi } from './data';
+import { multi } from './data';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -33,7 +33,7 @@ export class BarChartComponent {
   ];
 
   multi: any[];
-  view: any[] = [700, 400];
+  view: any[] = [900, 500];
 
   // options
   showXAxis: boolean = true;

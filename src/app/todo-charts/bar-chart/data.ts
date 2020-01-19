@@ -1,98 +1,131 @@
-export const single = [
+export const multi = [
   {
     name: '2006',
-    value: 65
+    series: [
+      {
+        name: 'Series A',
+        value: 65
+      }
+    ]
+  },
+  {
+    name: '2006',
+    series: [
+      {
+        name: 'Series B',
+        value: 28
+      }
+    ]
+  },
+
+  {
+    name: '2007',
+    series: [
+      {
+        name: 'Series A',
+        value: 59
+      }
+    ]
   },
   {
     name: '2007',
-    value: 59
+    series: [
+      {
+        name: 'Series B',
+        value: 48
+      }
+    ]
   },
   {
     name: '2008',
-    value: 80
-  },
-  {
-    name: '2009',
-    value: 81
-  },
-  {
-    name: '2010',
-    value: 56
-  },
-  {
-    name: '2011',
-    value: 55
-  },
-  {
-    name: '2012',
-    value: 40
-  }
-];
-
-export const multi = [
-  {
-    name: 'Series A',
     series: [
       {
-        name: '2006',
-        value: 65
-      },
-      {
-        name: '2007',
-        value: 59
-      },
-      {
-        name: '2008',
+        name: 'Series A',
         value: 80
-      },
+      }
+    ]
+  },
+  {
+    name: '2008',
+    series: [
       {
-        name: '2009',
-        value: 81
-      },
-      {
-        name: '2010',
-        value: 56
-      },
-      {
-        name: '2011',
-        value: 55
-      },
-      {
-        name: '2012',
+        name: 'Series B',
         value: 40
       }
     ]
   },
 
   {
-    name: 'Series B',
+    name: '2009',
     series: [
       {
-        name: '2006',
-        value: 28
-      },
+        name: 'Series A',
+        value: 81
+      }
+    ]
+  },
+  {
+    name: '2009',
+    series: [
       {
-        name: '2007',
-        value: 48
-      },
-      {
-        name: '2008',
-        value: 40
-      },
-      {
-        name: '2009',
+        name: 'Series B',
         value: 19
-      },
+      }
+    ]
+  },
+
+  {
+    name: '2010',
+    series: [
       {
-        name: '2010',
+        name: 'Series A',
+        value: 56
+      }
+    ]
+  },
+  {
+    name: '2010',
+    series: [
+      {
+        name: 'Series B',
         value: 86
-      },
+      }
+    ]
+  },
+
+  {
+    name: '2011',
+    series: [
       {
-        name: '2011',
+        name: 'Series A',
+        value: 55
+      }
+    ]
+  },
+  {
+    name: '2011',
+    series: [
+      {
+        name: 'Series B',
         value: 27
-      },
+      }
+    ]
+  },
+
+  {
+    name: '2012',
+    series: [
       {
-        name: '2012',
+        name: 'Series A',
+        value: 40
+      }
+    ]
+  },
+  {
+    name: '2012',
+    series: [
+      {
+        name: 'Series B',
         value: 90
       }
     ]
