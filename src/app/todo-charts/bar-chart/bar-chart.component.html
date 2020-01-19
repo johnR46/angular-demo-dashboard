@@ -1,1 +1,45 @@
-<p>bar-chart works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div style="width: 33%;"></div>
+    <div style="width: 33%;"><h3>Todo Compare Bar chart</h3></div>
+    <div style="width: 33%;text-align: end;">
+      <button type="button" class="btn btn-primary" (click)="toPipeChart()" >
+        next to pipe chart
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div style="display: block;">
+        <canvas
+          baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
+        >
+        </canvas>
+      </div>
+    </div>
+    <div class="col">
+      <ngx-charts-bar-vertical-stacked
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="multi"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [animations]="animations"
+        (select)="onSelect($event)"
+      >
+      </ngx-charts-bar-vertical-stacked>
+    </div>
+  </div>
+</div>

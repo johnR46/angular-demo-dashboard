@@ -3,13 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { TodoChartsRoutingModule } from './todo-charts-routing.module';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
-
-
+import { ChartsModule } from 'ng2-charts';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { PipeChartsComponent } from './pipe-charts/pipe-charts.component';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { LineChartComponent } from './line-chart/line-chart.component';
 @NgModule({
-  declarations: [BarChartComponent],
+  declarations: [BarChartComponent, PipeChartsComponent, LineChartComponent],
   imports: [
     CommonModule,
-    TodoChartsRoutingModule
+    TodoChartsRoutingModule,
+    ButtonsModule,
+    ChartsModule,
+    NgxChartsModule
   ]
 })
-export class TodoChartsModule { }
+export class TodoChartsModule {}

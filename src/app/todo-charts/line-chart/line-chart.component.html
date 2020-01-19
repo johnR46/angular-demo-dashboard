@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div style="width: 33%;"></div>
+    <div style="width: 33%;"><h3>Todo Compare Bar chart</h3></div>
+    <div style="width: 33%;text-align: end;">
+      <button type="button" class="btn btn-primary" (click)="toPipeChart()">
+        .....
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div style="display: block;">
+        <canvas
+          baseChart
+          width="400"
+          height="400"
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins"
+        >
+        </canvas>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
