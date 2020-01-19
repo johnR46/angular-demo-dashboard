@@ -1,6 +1,6 @@
 export const multi = [
   {
-    name: 'Germany',
+    name: 'Series A',
     series: [
       {
         name: 'January',

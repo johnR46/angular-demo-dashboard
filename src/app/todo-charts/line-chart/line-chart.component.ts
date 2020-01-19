@@ -38,7 +38,7 @@ export class LineChartComponent implements OnInit {
 
   // ngx chart
   multi: any[];
-  view: any[] = [700, 455];
+  view: any[] = [900, 560];
 
   // options
   legend: boolean = true;
@@ -48,8 +48,8 @@ export class LineChartComponent implements OnInit {
   yAxis: boolean = true;
   showYAxisLabel: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Year';
-  yAxisLabel: string = 'Population';
+  xAxisLabel: string = '';
+  yAxisLabel: string = '';
   timeline: boolean = true;
 
   colorScheme = {

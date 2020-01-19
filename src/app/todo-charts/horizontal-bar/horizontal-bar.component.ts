@@ -14,15 +14,42 @@ export class HorizontalBarComponent implements OnInit {
   public barChartOptions: ChartOptions = {
     responsive: true
   };
-  public barChartLabels: Label[] = ['Germany', 'France', 'USA'];
+  public barChartLabels: Label[] = ['Country'];
   public barChartType: ChartType = 'horizontalBar';
-  public barChartLegend = true;
+  public barChartLegend = false;
   public barChartPlugins = [];
 
   public barChartData: ChartDataSets[] = [
-    { data: [75, 100, 150], label: 'Germany', backgroundColor: '#5AA454' },
-    { data: [75, 100, 150], label: 'France', backgroundColor: '#A10A28' },
-    { data: [75, 100, 150], label: 'USA', backgroundColor: '#C7B42C' }
+    {
+      data: [
+        {
+          x: 75,
+          y: 20
+        }
+      ],
+      label: 'Germany',
+      backgroundColor: '#5AA454'
+    },
+    {
+      data: [
+        {
+          x: 100,
+          y: 20
+        }
+      ],
+      label: 'USA',
+      backgroundColor: '#A10A28'
+    },
+    {
+      data: [
+        {
+          x: 150,
+          y: 20
+        }
+      ],
+      label: 'France',
+      backgroundColor: '#C7B42C'
+    }
   ];
 
   // ngx chart
