@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="row">
+    <div style="width: 33%;"></div>
+    <div style="width: 33%;"><h3>Todo Compare Vertical Bar chart</h3></div>
+    <div style="width: 33%;text-align: end;">
+      <button type="button" class="btn btn-primary">
+        normal bar
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+      <ngx-charts-bar-vertical
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [results]="single"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legendTitle]="legendTitle"
+        [legend]="showLegend"
+        [legendPosition]="legendPosition"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [roundDomains]="roundDomains"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        [showDataLabel]="showDataLabel"
+        [activeEntries]="activeEntries"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+        [yScaleMax]="yScaleMax"
+        [yScaleMin]="yScaleMin"
+        [roundEdges]="roundEdges"
+        (select)="onSelect($event)"
+      >
+      </ngx-charts-bar-vertical>
+    </div>
+  </div>
+</div>

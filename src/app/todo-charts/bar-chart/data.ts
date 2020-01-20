@@ -4,7 +4,8 @@ export const multi = [
     series: [
       {
         name: 'Series A',
-        value: 65
+        value: 65,
+        label: 'AAAA'
       }
     ]
   },
@@ -13,7 +14,8 @@ export const multi = [
     series: [
       {
         name: 'Series B',
-        value: 28
+        value: 28,
+        label: 'AAAA'
       }
     ]
   },
@@ -23,7 +25,8 @@ export const multi = [
     series: [
       {
         name: 'Series A',
-        value: 59
+        value: 59,
+        label: 'AAAA'
       }
     ]
   },
@@ -32,7 +35,8 @@ export const multi = [
     series: [
       {
         name: 'Series B',
-        value: 48
+        value: 48,
+        label: 'AAAA'
       }
     ]
   },
@@ -41,7 +45,8 @@ export const multi = [
     series: [
       {
         name: 'Series A',
-        value: 80
+        value: 80,
+        label: 'AAAA'
       }
     ]
   },
@@ -50,7 +55,8 @@ export const multi = [
     series: [
       {
         name: 'Series B',
-        value: 40
+        value: 40,
+        label: 'AAAA'
       }
     ]
   },
@@ -60,7 +66,8 @@ export const multi = [
     series: [
       {
         name: 'Series A',
-        value: 81
+        value: 81,
+        label: 'AAAA'
       }
     ]
   },
@@ -69,7 +76,8 @@ export const multi = [
     series: [
       {
         name: 'Series B',
-        value: 19
+        value: 19,
+        label: 'AAAA'
       }
     ]
   },
@@ -79,7 +87,8 @@ export const multi = [
     series: [
       {
         name: 'Series A',
-        value: 56
+        value: 56,
+        label: 'AAAA'
       }
     ]
   },
@@ -88,7 +97,8 @@ export const multi = [
     series: [
       {
         name: 'Series B',
-        value: 86
+        value: 86,
+        label: 'AAAA'
       }
     ]
   },
@@ -98,7 +108,8 @@ export const multi = [
     series: [
       {
         name: 'Series A',
-        value: 55
+        value: 55,
+        label: 'AAAA'
       }
     ]
   },
@@ -107,7 +118,8 @@ export const multi = [
     series: [
       {
         name: 'Series B',
-        value: 27
+        value: 27,
+        label: 'AAAA'
       }
     ]
   },
@@ -117,7 +129,8 @@ export const multi = [
     series: [
       {
         name: 'Series A',
-        value: 40
+        value: 40,
+        label: 'AAAA'
       }
     ]
   },
@@ -126,7 +139,8 @@ export const multi = [
     series: [
       {
         name: 'Series B',
-        value: 90
+        value: 90,
+        label: 'AAAA'
       }
     ]
   }

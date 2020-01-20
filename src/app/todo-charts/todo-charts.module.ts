@@ -9,8 +9,9 @@ import { PipeChartsComponent } from './pipe-charts/pipe-charts.component';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { HorizontalBarComponent } from './horizontal-bar/horizontal-bar.component';
+import { NormalBarComponent } from './normal-bar/normal-bar.component';
 @NgModule({
-  declarations: [BarChartComponent, PipeChartsComponent, LineChartComponent, HorizontalBarComponent],
+  declarations: [BarChartComponent, PipeChartsComponent, LineChartComponent, HorizontalBarComponent, NormalBarComponent],
   imports: [
     CommonModule,
     TodoChartsRoutingModule,

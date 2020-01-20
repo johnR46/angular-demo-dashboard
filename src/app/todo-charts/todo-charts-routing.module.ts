@@ -4,6 +4,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { PipeChartsComponent } from './pipe-charts/pipe-charts.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { HorizontalBarComponent } from './horizontal-bar/horizontal-bar.component';
+import { NormalBarComponent } from './normal-bar/normal-bar.component';
 
 const routes: Routes = [
   {
@@ -23,8 +24,12 @@ const routes: Routes = [
     component: HorizontalBarComponent
   },
   {
+    path: 'normal',
+    component: NormalBarComponent
+  },
+  {
     path: '**',
-    redirectTo: 'bar'
+    redirectTo: 'normal'
   }
 ];
 
